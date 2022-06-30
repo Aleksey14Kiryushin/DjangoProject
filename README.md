@@ -1,1 +1,1 @@
-# Snikers Shop on Django
+# Sneakers Shop on Django
