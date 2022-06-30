@@ -1,1 +1,1 @@
-# DjangoProject
+# Snikers Shop on Django
