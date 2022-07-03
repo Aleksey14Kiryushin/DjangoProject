@@ -1,28 +1,37 @@
 body {
     background-color: #30302e;
+    margin: 0px;
 }
+
 
 aside {
     float: left;
     background: #4a4843;
-    width: 20%;
+    /* width: 23%; */
     padding: 1.5%;
-    height: 100vh;
+    /* height: 100vh; */
     color: white;
     border-right: 3px solid #b5b5ac;
     border-top-right-radius: 100px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    position: relative;
 }
 
 aside img {
     width: 80px;
-    float: left;
+    /* float: left; */
+    display: inline-block;
 }
 
 aside .logo {
     font-size: 25px;
-    display: flex;
     font-weight: 900;
     margin-top: 25px;
+    display: inline-block;
 }
 
 aside h3 {
@@ -49,11 +58,11 @@ aside ul li:hover, aside ul a:hover{
     transform: scale(1.05);
 }
 
-main .features {
-    float: left;
+.features {
+    /* float: left; */
     color: bisque;
     margin-top: 100px;
-    text-align: center;
+    
     width: 75%;
 }
 

@@ -1,12 +1,30 @@
 {% extends 'main/layout.html' %} 
 
+{% block ico %}
+    type="image/png" sizes="120x120" rel="icon" href="<i class="fas fa-home"></i>"
+{% endblock %}
+
 {% block title %} Main Page {% endblock %}
 
 {% block content %}
 
-<div class="features">
-    <h1>Main Page</h1>
+<div class="features container text-center">
+    <h1>{{ title }}</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae perferendis iure? Voluptatum velit placeat nam veniam facere non illo accusantium ex quia, aliquid nisi adipisci repellendus voluptates dolore. Nesciunt!</p>
+    
+    {% for value in values %}
+
+        <p>{{ value }}</p>
+
+    {% endfor %}
+
+
+    {% for value in obj %}
+
+        <p>{{ obj }}</p>
+
+    {% endfor %}
+
     <button class="btn btn-warning">Button</button>
 </div>
 

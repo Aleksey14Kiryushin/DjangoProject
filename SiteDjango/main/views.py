@@ -1,9 +1,26 @@
+from turtle import title
+from django.http import HttpResponseNotFound
 from django.shortcuts import render
 
 # Create your views here.
 
 def index(request):
-    return render(request, 'main/index.html')
+    data = {
+        "title": "Main Page",
+        "values": ['Some', 'Hello', 123],
+        "obj": {
+            "car": "BMW",
+            "age": 18,
+        }
+    }
+
+    return render(request, 'main/index.html', data)
     
 def about(request):
     return render(request, 'main/about.html')
+
+
+def pageNotFound(request, exception):
+        # '<img src="{% static 'main/img/404-page.jpg' %}" alt="logo">" alt="">'
+
+    return HttpResponseNotFound('<img src="SiteDjango/main/static/main/img/404-page.jpg" alt="">')
