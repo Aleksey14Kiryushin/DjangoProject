@@ -1,1 +1,1 @@
-# DjangoProject
+# Sneakers Shop on Django
